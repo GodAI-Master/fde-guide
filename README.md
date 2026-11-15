@@ -1,52 +1,6 @@
 # FDE入门指南
 
-中文 **AI 前线部署工程师（Forward Deployed Engineer）** 学习与面试资料库：从角色认知、交付方法论、企业 AI 落地，到面试通关与可复制工作模板。
-
-> 在线阅读：[vangong1999.github.io/FDE](https://vangong1999.github.io/FDE/) · 源码仓库：[github.com/VanGong1999/FDE](https://github.com/VanGong1999/FDE)  
-> 主读者：有后端/全栈经验、转 FDE。从零基础开始，可参考 [学习路径-零基础](/docs/00-导读/学习路径-零基础.md)  
-
-<div class="hero-actions">
-  <a class="primary" href="https://vangong1999.github.io/FDE/">在线阅读</a>
-  <a class="ghost" href="https://github.com/VanGong1999/FDE">GitHub 仓库</a>
-  <a class="ghost" href="/docs/00-导读/学习路径-转岗者.md">转岗学习路径</a>
-  <a class="ghost" href="/docs/09-面试题/README.md">面试题目录</a>
-</div>
-
-## 姊妹知识库
-
-本库与另外两个专题库互补，可按方向跳转：
-
-<div class="sister-grid">
-  <a class="sister-card" href="https://github.com/VanGong1999/FDE">
-    <span class="tag">本库</span>
-    <h3>FDE 知识库</h3>
-    <p>前线部署角色、交付方法论、企业 AI 落地、面试通关</p>
-  </a>
-  <a class="sister-card" href="https://github.com/VanGong1999/ai-inference">
-    <span class="tag">推理</span>
-    <h3>AI 推理工程</h3>
-    <p>Serving、GPU/显存、批处理、KV Cache、vLLM 与性能成本</p>
-  </a>
-  <a class="sister-card" href="https://github.com/VanGong1999/llm-agents-interview">
-    <span class="tag">Agent</span>
-    <h3>AI Agent 知识库</h3>
-    <p>Agent 面试与系统设计、工具调用、多 Agent、护栏</p>
-  </a>
-</div>
-
-| 知识库 | 侧重 | 仓库 |
-|--------|------|------|
-| **FDE 知识库**（本库） | 前线部署角色、交付方法论、企业 AI 落地、面试通关 | [VanGong1999/FDE](https://github.com/VanGong1999/FDE) |
-| **AI 推理工程知识库** | 推理 Serving、GPU/显存、批处理、KV Cache、性能与成本 | [VanGong1999/ai-inference](https://github.com/VanGong1999/ai-inference) |
-| **AI Agent 知识库** | LLM Agent 面试与系统设计、工具调用、多 Agent、护栏 | [VanGong1999/llm-agents-interview](https://github.com/VanGong1999/llm-agents-interview) |
-
-## 你学完能做什么
-
-- 说清 FDE 与 SWE / SE / SA 的差异，并完成转岗自评
-- 按 Discover → Design → Deploy → Review 推进客户侧 AI 交付
-- 独立完成 RAG / Agent 方案选型、Eval、生产化清单
-- 按公司类型准备 Decomposition、系统设计、Take-home 与行为面
-- 沿 [10 概念课程](/docs/10-概念课程/README.md) 十条轨道补齐约 171 个面试高频概念（从 Token/RAG 到 MLOps、Serving、安全与客户面）
+面向对前线部署工程师（FDE）感兴趣的读者，汇总学习路线、交付方法、AI 落地案例与面试资料，帮助你按自己的基础找到合适的入门路径。
 
 ## 读者分流（先选一条路）
 
