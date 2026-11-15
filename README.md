@@ -1,0 +1,215 @@
+# FDE入门指南
+
+中文 **AI 前线部署工程师（Forward Deployed Engineer）** 学习与面试资料库：从角色认知、交付方法论、企业 AI 落地，到面试通关与可复制工作模板。
+
+> 在线阅读：[vangong1999.github.io/FDE](https://vangong1999.github.io/FDE/) · 源码仓库：[github.com/VanGong1999/FDE](https://github.com/VanGong1999/FDE)  
+> 主读者：有后端/全栈经验、转 FDE。从零基础开始，可参考 [学习路径-零基础](/docs/00-导读/学习路径-零基础.md)  
+
+<div class="hero-actions">
+  <a class="primary" href="https://vangong1999.github.io/FDE/">在线阅读</a>
+  <a class="ghost" href="https://github.com/VanGong1999/FDE">GitHub 仓库</a>
+  <a class="ghost" href="/docs/00-导读/学习路径-转岗者.md">转岗学习路径</a>
+  <a class="ghost" href="/docs/09-面试题/README.md">面试题目录</a>
+</div>
+
+## 姊妹知识库
+
+本库与另外两个专题库互补，可按方向跳转：
+
+<div class="sister-grid">
+  <a class="sister-card" href="https://github.com/VanGong1999/FDE">
+    <span class="tag">本库</span>
+    <h3>FDE 知识库</h3>
+    <p>前线部署角色、交付方法论、企业 AI 落地、面试通关</p>
+  </a>
+  <a class="sister-card" href="https://github.com/VanGong1999/ai-inference">
+    <span class="tag">推理</span>
+    <h3>AI 推理工程</h3>
+    <p>Serving、GPU/显存、批处理、KV Cache、vLLM 与性能成本</p>
+  </a>
+  <a class="sister-card" href="https://github.com/VanGong1999/llm-agents-interview">
+    <span class="tag">Agent</span>
+    <h3>AI Agent 知识库</h3>
+    <p>Agent 面试与系统设计、工具调用、多 Agent、护栏</p>
+  </a>
+</div>
+
+| 知识库 | 侧重 | 仓库 |
+|--------|------|------|
+| **FDE 知识库**（本库） | 前线部署角色、交付方法论、企业 AI 落地、面试通关 | [VanGong1999/FDE](https://github.com/VanGong1999/FDE) |
+| **AI 推理工程知识库** | 推理 Serving、GPU/显存、批处理、KV Cache、性能与成本 | [VanGong1999/ai-inference](https://github.com/VanGong1999/ai-inference) |
+| **AI Agent 知识库** | LLM Agent 面试与系统设计、工具调用、多 Agent、护栏 | [VanGong1999/llm-agents-interview](https://github.com/VanGong1999/llm-agents-interview) |
+
+## 你学完能做什么
+
+- 说清 FDE 与 SWE / SE / SA 的差异，并完成转岗自评
+- 按 Discover → Design → Deploy → Review 推进客户侧 AI 交付
+- 独立完成 RAG / Agent 方案选型、Eval、生产化清单
+- 按公司类型准备 Decomposition、系统设计、Take-home 与行为面
+- 沿 [10 概念课程](/docs/10-概念课程/README.md) 十条轨道补齐约 171 个面试高频概念（从 Token/RAG 到 MLOps、Serving、安全与客户面）
+
+## 读者分流（先选一条路）
+
+| 你是谁 | 从这里开始 |
+|--------|------------|
+| 后端/全栈转 FDE（推荐） | [学习路径-转岗者](/docs/00-导读/学习路径-转岗者.md) |
+| 编程较弱、想从零了解 | [学习路径-零基础](/docs/00-导读/学习路径-零基础.md) |
+| 只想突击面试 | [04-面试通关](/docs/04-面试通关/面试全景与公司对照.md) + [4–6 周备面计划](/docs/04-面试通关/4-6周备面计划.md) |
+| 已入职要上手交付 | [02-交付方法论](/docs/02-交付方法论/Discover-Design-Deploy-Review.md) + [08-工具箱](/docs/08-工具箱与清单/) |
+
+## 4 周核心路径（转岗者速览）
+
+| 周次 | 主题 | 必读 |
+|------|------|------|
+| Week 1 | 角色与自我定位 | [01-角色认知](/docs/01-角色认知/什么是FDE.md) |
+| Week 2 | 交付方法论 | [02-交付方法论](/docs/02-交付方法论/Discover-Design-Deploy-Review.md) |
+| Week 3 | AI 落地 | [03-AI落地](/docs/03-AI落地/企业AI落地全景.md) |
+| Week 4 | 面试与实操模板 | [04-面试通关](/docs/04-面试通关/面试全景与公司对照.md) + [08-工具箱](/docs/08-工具箱与清单/) |
+
+**加长（Week 5–8）**：[行业案例](/docs/06-行业案例/README.md) + [外文精读](/docs/07-外文精读/README.md) + [能力深水区](/docs/05-能力补强/README.md)。完整安排见 [如何使用本仓库](/docs/00-导读/如何使用本仓库.md)。
+
+## 目录导航
+
+### 00 导读
+
+- [如何使用本仓库](/docs/00-导读/如何使用本仓库.md)
+- [学习路径-转岗者](/docs/00-导读/学习路径-转岗者.md)
+- [学习路径-零基础](/docs/00-导读/学习路径-零基础.md)
+- [术语表](/docs/00-导读/术语表.md)
+- [扩展阅读清单](/docs/00-导读/扩展阅读清单.md)
+
+### 01 角色认知（核心必读 A）
+
+- [什么是 FDE](/docs/01-角色认知/什么是FDE.md)
+- [FDE 人设使命与技术栈](/docs/01-角色认知/FDE人设使命与技术栈.md)
+- [公司图谱与岗位差异](/docs/01-角色认知/公司图谱与岗位差异.md)
+- [能力模型与成长路径](/docs/01-角色认知/能力模型与成长路径.md)
+- [适合谁不适合谁](/docs/01-角色认知/适合谁不适合谁.md)
+- [FDE 与 SWE 对比](/docs/01-角色认知/FDE与SWE对比.md) · [如何成为 FDE](/docs/01-角色认知/如何成为FDE.md)
+
+### 02 交付方法论（核心必读 B）
+
+- [Discover-Design-Deploy-Review](/docs/02-交付方法论/Discover-Design-Deploy-Review.md)
+- [需求发现与问题拆解](/docs/02-交付方法论/需求发现与问题拆解.md)
+- [POC 到生产](/docs/02-交付方法论/POC到生产.md)
+- [客户沟通与阻力处理](/docs/02-交付方法论/客户沟通与阻力处理.md)
+- [咨询思维与软技能栈](/docs/02-交付方法论/咨询思维与软技能栈.md)
+- [反模式与踩坑](/docs/02-交付方法论/反模式与踩坑.md)
+- [客户成果方法论](/docs/02-交付方法论/客户成果方法论.md)
+
+### 03 AI 落地（核心必读 C）
+
+- [企业 AI 落地全景](/docs/03-AI落地/企业AI落地全景.md)
+- [RAG 实战精要](/docs/03-AI落地/RAG实战精要.md)
+- [Agent 与工具调用](/docs/03-AI落地/Agent与工具调用.md)
+- [Agent 开发工程经验](/docs/03-AI落地/Agent开发工程经验.md)
+- [Google ADK 与多 Agent 编排](/docs/03-AI落地/Google-ADK与多Agent编排.md)
+- [评测 Eval 与 Guardrails](/docs/03-AI落地/评测Eval与Guardrails.md)
+- [LLM 评测双环](/docs/03-AI落地/LLM评测双环.md)
+- [生产化清单](/docs/03-AI落地/生产化清单.md)
+- [架构决策树](/docs/03-AI落地/架构决策树.md)
+- [AI 系统设计课程·基础篇](/docs/03-AI落地/AI系统设计课程-基础篇.md) · [·生产篇](/docs/03-AI落地/AI系统设计课程-生产篇.md)
+
+### 04 面试通关（核心必读 D）
+
+- [面试全景与公司对照](/docs/04-面试通关/面试全景与公司对照.md)
+- [公司差异与薪酬](/docs/04-面试通关/公司差异与薪酬.md)
+- 各公司面试指南：[Palantir](/docs/04-面试通关/Palantir-FDSE面试指南.md) · [OpenAI](/docs/04-面试通关/OpenAI-FDE面试指南.md) · [Anthropic](/docs/04-面试通关/Anthropic-FDE面试指南.md) · [Google](/docs/04-面试通关/Google-FDE面试指南.md) · [AI 初创](/docs/04-面试通关/AI初创公司面试指南.md)
+- [面试练习操练系统](/docs/04-面试通关/面试练习操练系统.md)
+- [客户模拟操练](/docs/04-面试通关/客户模拟操练.md) · [代码库 / Learning 操练](/docs/04-面试通关/代码库Learning操练.md) · [AI 系统设计案例操练](/docs/04-面试通关/AI系统设计案例操练.md) · [价值观与招聘经理操练](/docs/04-面试通关/价值观与招聘经理操练.md)
+- [Decomposition 拆解面](/docs/04-面试通关/Decomposition拆解面.md)
+- [C.A.S.E. 框架与 Delta 案例](/docs/04-面试通关/CASE框架与Delta案例.md)
+- [技术方案与 LLM 系统设计](/docs/04-面试通关/技术方案与LLM系统设计.md)
+- [编码与 Learning 轮](/docs/04-面试通关/编码与Learning轮.md)
+- [行为面 STAR 题库](/docs/04-面试通关/行为面STAR题库.md)
+- [Take-home 与演示](/docs/04-面试通关/Take-home与演示.md)
+- [4–6 周备面计划](/docs/04-面试通关/4-6周备面计划.md)
+
+### 05 能力补强
+
+- [索引](/docs/05-能力补强/README.md) · [零基础补课地图](/docs/05-能力补强/零基础编程补课地图.md)
+- [数据工程基石课程](/docs/05-能力补强/数据工程基石课程.md)
+- [GCP 云架构与基础设施](/docs/05-能力补强/GCP云架构与基础设施.md)
+- [气隙与战术边缘部署](/docs/05-能力补强/气隙与战术边缘部署.md)
+- [Snowflake 与 Databricks 现场](/docs/05-能力补强/Snowflake与Databricks现场.md)
+- [企业 SSO 与权限模型](/docs/05-能力补强/企业SSO与权限模型.md)
+- [企业网络与私有连接白话](/docs/05-能力补强/企业网络与私有连接白话.md)
+- [变更管理与培训设计](/docs/05-能力补强/变更管理与培训设计.md)
+- [解决方案产品化](/docs/05-能力补强/解决方案产品化.md)
+
+### 06 行业案例
+
+- [案例目录](/docs/06-行业案例/README.md)
+- [客服坐席助手](/docs/06-行业案例/01-客服坐席助手.md) · [知识库问答](/docs/06-行业案例/02-企业知识库问答.md) · [研发 Copilot](/docs/06-行业案例/03-内部研发Copilot.md)
+- [合同审核 HITL](/docs/06-行业案例/04-合同单据审核HITL.md) · [流程工单 Agent](/docs/06-行业案例/05-流程型工单Agent.md) · [限域分析助手](/docs/06-行业案例/06-限域数据分析助手.md)
+- 真实部署：[Morgan Stanley × OpenAI](/docs/06-行业案例/07-Morgan-Stanley-OpenAI.md) · [John Deere & Blue River](/docs/06-行业案例/08-John-Deere-Blue-River.md) · [Airbus × Palantir](/docs/06-行业案例/09-Airbus-Palantir.md)
+
+### 07 外文精读
+
+- [精读目录](/docs/07-外文精读/README.md)
+- [Exponent 2026](/docs/07-外文精读/01-Exponent-FDE面试2026指南.md) · [Decomposition](/docs/07-外文精读/02-Decomposition面试框架与操练.md) · [Palantir](/docs/07-外文精读/03-Palantir-FDSE面试指南.md) · [OpenAI](/docs/07-外文精读/04-OpenAI-FDE面试指南.md)
+- [Anthropic](/docs/07-外文精读/05-Anthropic-Applied-AI面试侧重点.md) · [Careers 对照](/docs/07-外文精读/06-各公司Careers岗位描述对照.md) · [OWASP LLM](/docs/07-外文精读/07-OWASP-LLM应用风险Top10.md)
+- [Awesome FDE 课程体系总览](/docs/07-外文精读/08-Awesome-FDE课程体系总览.md) · [SPC 与多家 FDE 现场声音](/docs/07-外文精读/09-SPC与多家FDE现场声音.md)
+- [FDEInterviews 公开站点地图](/docs/07-外文精读/10-FDEInterviews公开站点地图.md)
+
+### 08 工具箱与模板
+
+- [08 工具箱与清单](/docs/08-工具箱与清单/README.md)
+  - [发现访谈提纲](/docs/08-工具箱与清单/发现访谈提纲.md) · [POC 验收表](/docs/08-工具箱与清单/POC验收表.md) · [Go-Live](/docs/08-工具箱与清单/生产Go-Live清单.md) · [周报](/docs/08-工具箱与清单/周报模板.md)
+  - [现场勘察与范围文档](/docs/08-工具箱与清单/现场勘察与范围文档.md)
+- 可复制模板：[发现访谈纪要](/docs/templates/发现访谈纪要.md) · [问题陈述](/docs/templates/问题陈述.md) · [技术范围 PRD](/docs/templates/技术范围PRD.md) · [POC 验收表](/docs/templates/POC验收表.md) · [Go-Live 检查表](/docs/templates/Go-Live检查表.md) · [周报](/docs/templates/周报.md) · [高管周报 WES](/docs/templates/高管周报WES.md) · [决策备忘录](/docs/templates/决策备忘录.md) · [现场勘察](/docs/templates/现场勘察SiteSurvey.md)
+
+### 09 面试题
+
+- [题目录](/docs/09-面试题/README.md)
+- [1. LLM和AI基础](/docs/09-面试题/README.md#1-llm和ai基础)（20 题）· [目录](https://github.com/VanGong1999/FDE/tree/main/docs/09-面试题/1.LLM和AI基础)
+- [2. RAG和Agent系统](/docs/09-面试题/README.md#2-rag和agent系统)（20 题）· [目录](https://github.com/VanGong1999/FDE/tree/main/docs/09-面试题/2.RAG和Agent系统)
+- [4. 生产系统设计](/docs/09-面试题/README.md#4-生产系统设计)（12 题）· [目录](https://github.com/VanGong1999/FDE/tree/main/docs/09-面试题/4.生产系统设计)
+- [6. ML基础设施与Serving](/docs/09-面试题/README.md#6-ml基础设施与serving)（20 题）· [目录](https://github.com/VanGong1999/FDE/tree/main/docs/09-面试题/06-ML基础设施与Serving)
+- [8. AI安全隐私与治理](/docs/09-面试题/README.md#8-ai安全隐私与治理)（20 题）· [目录](https://github.com/VanGong1999/FDE/tree/main/docs/09-面试题/08-AI安全隐私与治理)
+- [10. 客户面手艺](/docs/09-面试题/README.md#10-客户面手艺)（21 题）· [目录](https://github.com/VanGong1999/FDE/tree/main/docs/09-面试题/10.客户面手艺)
+
+### 10 概念课程（171 概念）
+
+对照公开 FDE 课程十条轨道的**原创中文概念课**：直觉 + 工作示例 + 面试取舍 + 现场用法。与 09 分工：概念课建直觉，面试题练口述。
+
+- [总索引](/docs/10-概念课程/README.md)
+- [01 LLM 与 GenAI](/docs/10-概念课程/01-LLM与GenAI基础/README.md) · [02 检索与 Agent](/docs/10-概念课程/02-检索与Agent/README.md) · [03 评测与 ML](/docs/10-概念课程/03-评测与ML基础/README.md)
+- [04 生产系统设计](/docs/10-概念课程/04-生产系统设计/README.md) · [05 MLOps](/docs/10-概念课程/05-MLOps与生命周期/README.md) · [06 Serving](/docs/10-概念课程/06-ML基础设施与Serving/README.md)
+- [07 数据与 SQL](/docs/10-概念课程/07-数据与SQL工程/README.md) · [08 安全治理](/docs/10-概念课程/08-AI安全隐私与治理/README.md)
+- [09 编码手艺](/docs/10-概念课程/09-编码与工程手艺/README.md) · [10 客户面手艺](/docs/10-概念课程/10-客户面手艺/README.md)
+- [11 后端开发第一性原理](/docs/10-概念课程/11-后端开发第一性原理/README.md)
+
+### 11 课程录音整理（B 站课程）
+
+B 站《从 AI FDE 到 Agentic AI 架构师：把智能体真正落地到业务现场》（BV1XYnF6GEjD）Day 1 + Day 2 录音整理笔记。
+
+- [总索引](/docs/11-从AIFDE到AgenticAI架构师/README.md)
+- Day 1：[课程简介](/docs/11-从AIFDE到AgenticAI架构师/01-课程简介与三周总览.md) · [OpenRouter 与免费 LLM](/docs/11-从AIFDE到AgenticAI架构师/02-Day1-OpenRouter与免费LLM即时上手.md) · [三周路线图](/docs/11-从AIFDE到AgenticAI架构师/03-Day1-三周路线图.md) · [什么是 FDE](/docs/11-从AIFDE到AgenticAI架构师/04-Day1-什么是FDE.md)
+- Day 1：[技能工具经验](/docs/11-从AIFDE到AgenticAI架构师/05-Day1-FDE所需技能工具与经验.md) · [环境搭建](/docs/11-从AIFDE到AgenticAI架构师/06-Day1-环境搭建.md) · [克隆仓库与 uv sync](/docs/11-从AIFDE到AgenticAI架构师/07-Day1-克隆仓库与uv-sync.md) · [本地 Maze Agent](/docs/11-从AIFDE到AgenticAI架构师/08-Day1-本地运行Maze-Agent.md)
+- Day 2：[回顾计划](/docs/11-从AIFDE到AgenticAI架构师/09-Day2-回顾与计划.md) · [GPT→ChatGPT 6 技巧](/docs/11-从AIFDE到AgenticAI架构师/10-Day2-从GPT到ChatGPT的6个技巧.md) · [前沿 LLM 与 METR](/docs/11-从AIFDE到AgenticAI架构师/11-Day2-比较前沿LLM与METR.md) · [UnderCover 项目](/docs/11-从AIFDE到AgenticAI架构师/12-Day2-介绍UnderCover项目.md)
+- Day 2：[Lab 与 LangChain](/docs/11-从AIFDE到AgenticAI架构师/13-Day2-Lab准备与LangChain基础.md) · [理赔数据](/docs/11-从AIFDE到AgenticAI架构师/14-Day2-探索理赔数据.md) · [测试多模型](/docs/11-从AIFDE到AgenticAI架构师/15-Day2-测试多个模型.md) · [LangChain 理赔 Agent](/docs/11-从AIFDE到AgenticAI架构师/16-Day2-用LangChain构建理赔Agent.md)
+
+### 引用总表
+
+- [references/sources.md](/references/sources.md)
+
+## 版权与引用
+
+- 本仓库原创内容采用 [MIT License](/LICENSE)
+- 外文精华以综述/意译呈现，版权归原作者；见各文「参考与来源」与 [sources.md](/references/sources.md)
+- Awesome FDE 课程内容中文整理署名：Pier Paolo Ippolito、Paolo Perrone（见 [总览精读](/docs/07-外文精读/08-Awesome-FDE课程体系总览.md)）
+
+## 贡献
+
+欢迎 PR。请先阅读 [CONTRIBUTING.md](/CONTRIBUTING.md)。
+
+## Phase 说明
+
+| 阶段 | 状态 | 内容 |
+|------|------|------|
+| Phase 1 | 已完成 | 骨架 + 四大核心必读 + 工具箱模板 |
+| Phase 2 | 已完成 | 行业案例深写、外文精读库、能力补强深水区 |
+| Awesome FDE 入库 | 已完成 | 英文课程拆分翻译并归入 01–08 |
+
+> 本仓库基于原作者 Van Gong 的公开项目 [VanGong1999/FDE](https://github.com/VanGong1999/FDE) 复制整理；原作者的许可声明和各文档的第三方来源说明均予保留。
